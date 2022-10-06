@@ -6,7 +6,7 @@
     --green : #197f5b;
     --orange: #EF9919;
     --ligth-gray: #f9f5f2;
-    --ligth-black:#535353;
+    --ligth-black:rgb(83, 83, 83);
     --white:#ffffff;
 }
 
@@ -100,7 +100,7 @@ img{
 .icon-sn{
     width: 3rem;
     height: 3rem;
-    background-color: #f9f5f2;
+    background-color: #ffffff;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
@@ -128,11 +128,11 @@ h1>span{
     padding: 1rem;
 }
 
-
 .div-fotografia{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+    width: fit-content;
+    margin: 0 auto;
     background-color: #197f5b;
 }
 
@@ -146,8 +146,7 @@ h1>span{
     color: #535353;
     border-radius: 30px;
     width: 9rem;
-    height: 3rem;
-    
+    height: 3rem;  
 }
 
 p > span{
@@ -158,12 +157,14 @@ p > span{
 
 .burbuja-1{
     position: absolute;
-    align-items: center;
+    right: 160px;
+    bottom: 210px;
 }
 
 .burbuja-2{
     position: absolute;
-    align-items: center;
+    left: 150px;
+    bottom: 30px;
 }
 
 .collab{
@@ -176,32 +177,39 @@ p > span{
     background-color: var(--ligth-gray);
     position: relative;
     top: -5rem;
-    margin: 0rem 3rem;
+    max-width: 80vw;
+    margin: auto;
 }
 
 .collab-text{
     background-color: var(--ligth-gray);
+    padding: 1rem 0rem;
 }
 
 .collab-form{
-    background-color: var(--ligth-black);
+    background-color: rgba(83, 83, 83, 0.1);
     border-radius: 1.5rem;
     padding: 0.5rem 0rem;
+    margin: 1rem 0.5rem;
     display: flex;
     justify-content: space-between;
 }
 
 .btn-form{
     border: 0px;
+    opacity: 1;
+    width: 20vw;
     border-radius: 1.5rem;
     background-color: #197f5b;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
+    margin: -4px 5px -4px 0px;
     color: #ffffff;
 }
 
 .input-form{
     border: 0px;
     background-color: transparent;
+    padding: 0rem 0.5rem;
 }
 
 
