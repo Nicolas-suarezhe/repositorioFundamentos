@@ -212,6 +212,184 @@ p > span{
     padding: 0rem 0.5rem;
 }
 
+.estudios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.tec-acad{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.bgc-estudios{
+    background-color: var(--ligth-gray);
+}
+
+.tec-acad > img{
+    width: 20vw;
+    background-color: transparent;
+}
+
+.academlo > img{
+    width: 20vw;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+.p-about{
+    display: flex;
+    gap: 10px;
+}
+
+.about-section{
+    padding: 0px 1rem;
+}
+
+.p-div-about{
+    background-color: #197f5b;
+    color: #197f5b;
+}
+
+.about-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #197f5b;
+    border: 0px;
+    border-radius: 30px;
+    padding: 0.3rem 1.3rem;
+}
+
+button > p{
+    background-color: #197f5b;
+    color: #ffffff;
+    position: relative;
+    top: 2px;
+}
+
+.arrow-img{
+    filter: invert(1);
+}
+
+.web-design{
+    margin-top: 1rem;
+}
+
+.skill-contenedor{
+    background-color: var(--ligth-gray);
+    color: var(--ligth-gray);
+    border-radius: 1rem;
+
+}
+
+.intern-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skill{
+    color: #197f5b;
+    position: relative;
+    bottom: 24px;
+    border-radius: 1rem;
+}
+
+.skill-web{
+    width: 80vw;
+}
+
+.skill-inter{
+    width: 70vw;
+}
+
+.skill-ux{
+    width: 60vw;
+}
+
+.skill-frame{
+    width: 50vw;
+}
+
+.green-text{
+    color: #197f5b;
+}
+
+.skill-bars{
+    width: 90vw;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.skill-bars > h2{
+    text-align: center;
+}
+
+
+
+
+
+.portafolio > h2{
+    text-align: center;
+    margin: 1.5rem 0rem;
+}
+
+.ex-portafolio{
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "first first"
+    "second" "third"
+    "fourth" "fourth";
+}
+
+.img-portafolio{
+    width: 200px;
+}
+
+.first{
+    grid-area: "first";
+    gap: 1rem;
+}
+
+.second{
+    grid-area: "second";
+}
+
+.third{
+    grid-area: "third";
+}
+
+.fourth{
+    grid-area: "fourth";
+}
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 700px) {
