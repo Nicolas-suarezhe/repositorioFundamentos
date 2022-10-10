@@ -42,6 +42,7 @@
 img{
     width: 24px;
     background-color: var(--light-blue);
+    border-radius: 2rem;
 }
 
 #boton-menu{
@@ -153,6 +154,7 @@ h1>span{
     border-radius: 30px;
     width: 9rem;
     height: 3rem;  
+    box-shadow: 4px 4px 4px #ccc;
 }
 
 p > span{
@@ -163,13 +165,13 @@ p > span{
 
 .burbuja-1{
     position: absolute;
-    right: 160px;
+    right: 130px;
     bottom: 210px;
 }
 
 .burbuja-2{
     position: absolute;
-    left: 150px;
+    left: 130px;
     bottom: 30px;
 }
 
