@@ -8,6 +8,7 @@
     --ligth-gray: #f9f5f2;
     --ligth-black:rgb(83, 83, 83);
     --white:#ffffff;
+    --light-blue: #80f7ff;
 }
 
 *{
@@ -24,23 +25,23 @@
     height: 0px;
     border-right: 60px solid transparent;
     border-left: 60px solid transparent;
-    border-top: 100px solid #197f5b;
+    border-top: 100px solid var(--light-blue);
     position: relative;
 }
 
 .nav{
-    background-color: #197f5b;
+    background-color: var(--light-blue);
     display: flex;
     padding: 0.5rem 1rem;
     align-items: center;
     justify-content: end;
     height: 80px;
-    color: var(--white);
+    color: black;
 }
 
 img{
     width: 24px;
-    background-color: #197f5b;
+    background-color: var(--light-blue);
 }
 
 #boton-menu{
@@ -49,7 +50,7 @@ img{
 
 .nav-menu{
     position: absolute;
-    background-color: var(--green);
+    background-color: var(--light-blue);
     width: 100%;
     right: 0;
     top: 80px;
@@ -59,13 +60,13 @@ img{
     justify-content: space-evenly;
     align-items: center;
     display: none;
-    background-color: #197f5b;
+    background-color: var(--light-blue);
 }
 
 .nav-item{
     list-style: none;
     font-size: 1.25rem;
-    background-color: #197f5b;
+    background-color: var(--light-blue);
 }
 
 #boton-menu:checked ~ .nav-menu{
@@ -82,7 +83,7 @@ img{
     color: #ffffff;
     text-align: center;
     padding: 1rem;
-    background-color: #197f5b;
+    background-color: var(--light-blue);
 }
 
 .redes-sociales{
@@ -133,11 +134,16 @@ h1>span{
     margin-bottom: 1rem;
     width: fit-content;
     margin: 0 auto;
-    background-color: #197f5b;
+    background-color: var(--light-blue);
 }
 
 .section{
-    background-color: #197f5b;
+    background-color: var(--light-blue);
+    color: black;
+}
+
+.sections{
+    background-color: var(--light-blue);
 }
 
 .burbuja-1,
@@ -200,10 +206,10 @@ p > span{
     opacity: 1;
     width: 20vw;
     border-radius: 1.5rem;
-    background-color: #197f5b;
+    background-color: var(--light-blue);
     padding: 0.7rem 1rem;
     margin: -4px 5px -4px 0px;
-    color: #ffffff;
+    color: black;
 }
 
 .input-form{
@@ -212,12 +218,17 @@ p > span{
     padding: 0rem 0.5rem;
 }
 
+.title-estudios{
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .estudios{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
     gap: 2rem;
 }
 
@@ -245,12 +256,6 @@ p > span{
     background-color: transparent;
 }
 
-
-
-
-
-
-
 .p-about{
     display: flex;
     gap: 10px;
@@ -261,8 +266,8 @@ p > span{
 }
 
 .p-div-about{
-    background-color: #197f5b;
-    color: #197f5b;
+    background-color: var(--light-blue);
+    color: var(--light-blue);
 }
 
 .about-btn{
@@ -270,15 +275,15 @@ p > span{
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
-    background-color: #197f5b;
+    background-color: var(--light-blue);
     border: 0px;
     border-radius: 30px;
     padding: 0.3rem 1.3rem;
 }
 
 button > p{
-    background-color: #197f5b;
-    color: #ffffff;
+    background-color: var(--light-blue);
+    color: black;
     position: relative;
     top: 2px;
 }
@@ -295,7 +300,6 @@ button > p{
     background-color: var(--ligth-gray);
     color: var(--ligth-gray);
     border-radius: 1rem;
-
 }
 
 .intern-p{
@@ -305,26 +309,26 @@ button > p{
 }
 
 .skill{
-    color: #197f5b;
+    color: var(--light-blue);
     position: relative;
     bottom: 24px;
     border-radius: 1rem;
 }
 
 .skill-web{
-    width: 80vw;
+    width: 60%;
 }
 
 .skill-inter{
-    width: 70vw;
+    width: 70%;
 }
 
 .skill-ux{
-    width: 60vw;
+    width: 60%;
 }
 
 .skill-frame{
-    width: 50vw;
+    width: 90%;
 }
 
 .green-text{
@@ -342,48 +346,146 @@ button > p{
 }
 
 
-
-
-
-.portafolio > h2{
+.exp-section > h2{
+    background-color: var(--ligth-gray);
     text-align: center;
-    margin: 1.5rem 0rem;
+    padding-top: 2rem;
+    margin-top: 1rem;
 }
 
-.ex-portafolio{
+.carrousel{
     display: grid;
-    width: 90vw;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "first first"
-    "second" "third"
-    "fourth" "fourth";
-}
-
-.img-portafolio{
-    width: 200px;
-}
-
-.first{
-    grid-area: "first";
+    grid-auto-flow: column;
+    scroll-behavior: auto;
     gap: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    background-color: var(--ligth-gray);
+    padding: 3rem 2rem;
 }
 
-.second{
-    grid-area: "second";
+.img-carrousel{
+    width: 150px;
+    height: 150px;
+    background-color: var(--ligth-gray);
 }
 
-.third{
-    grid-area: "third";
+.card > *{
+    background-color: var(--ligth-gray);
+    text-align: center;
 }
 
-.fourth{
-    grid-area: "fourth";
+.card{
+    background-color: var(--ligth-gray);
+    padding: 0rem 2rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.texto-first-p{
+    position: relative;
+    bottom: 20px;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+#portafolio{
+    margin-top: 4rem;
+}
+
+.titulo-de-section{
+    text-align: center;
+}
+
+.contenedor-imagenes{
+    
+    padding: 2rem;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 49% 49%; 
+    grid-template-areas: 
+    "uno uno"
+    "dos tres"
+    "cuatro cuatro";
+    gap: 1rem;
+    margin: 0 auto;
+    
+}
+
+.unoimg{
+    grid-area: uno;
+}
+
+.dosimg{
+    grid-area: dos;
+}
+
+.tresimg{
+    grid-area: tres;
+    margin-top: 1rem;
+}
+
+.cuatroimg{
+    grid-area: cuatro;
+}
+
+
+.img-port{
+    width: 100%;
+}
+
+.contacto{
+    padding: 2rem;
+    }
+    
+    .contenedor-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2rem;
+        gap: 3rem;
+    }
+    
+    
+    .circulo{
+        width: 65px;
+        background-color: var(--ligth-gray);
+        height: 65px;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.8rem;
+    }
+    
+    .circulo > img {
+        background-color: transparent;
+        width: 30px;
+    }
+    
+    .footer,
+    .footer > h2,
+    .footer > p{
+        background-color: var(--light-blue);
+        color: black;
+        text-align: center;
+        padding: 1rem;
+    }
 
 
 
@@ -425,4 +527,51 @@ button > p{
         width: 450px;
     }
     
+
+    .estudios{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem;
+        gap: 2rem;
+    }
+
+    .tec-acad{
+        height: 400px;
+    }
+
+
+
+
+
+
+
+
+    .contenedor-imagenes{ 
+        display: grid;
+        grid-template-columns: 32% 32% 32%;
+        grid-template-areas: 
+        "uno dos tres"
+        "cuatro cuatro 0";
+        max-width: 600px;
+       align-items: center;
+       margin: 0 auto;
+        
+    }
+
+    .img-port{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cuatroimg{
+        height: 100%;
+    }
+
+    .tresimg{
+       
+        margin-top: 0rem;
+    }
+
 }
