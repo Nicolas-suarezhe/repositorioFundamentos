@@ -39,9 +39,15 @@
     color: black;
 }
 
+
+
 img{
     width: 24px;
     background-color: var(--light-blue);
+}
+
+.fotografia{
+    width: 200px;
     border-radius: 2rem;
 }
 
@@ -114,12 +120,6 @@ img{
     height: 25px;
     margin-top: 10px;
     background-color: #ffffff;
-}
-
-
-
-.fotografia{
-    width: 200px;
 }
 
 h1>span{
